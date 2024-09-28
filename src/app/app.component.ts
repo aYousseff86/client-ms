@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, input, signal} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,4 +10,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'client-ms';
+  protected list = input<number[]>();
+  private initialValue = signal<number>(0);
+
+  add = () => {console.log('i will do it tomorrow')}
+  remove = () => {console.log('i will do it tomorrow')}
 }
