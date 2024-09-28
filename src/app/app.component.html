@@ -3,7 +3,7 @@
 
   </div>
   <div class="action-wrapper">
-    <div (click)="add()"><p>Add</p></div>
-    <div (click)="remove()"><p>Remove</p></div>
+    <div tabindex="0"  aria-label="add number" (click)="add()" (keydown)="add()"><p>Add</p></div>
+    <div tabindex="0" aria-label="remove number " (click)="remove()" (keydown)="remove()"><p>Remove</p></div>
   </div>
 </div>

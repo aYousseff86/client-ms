@@ -13,6 +13,9 @@ export class AppComponent {
   protected list = input<number[]>();
   private initialValue = signal<number>(0);
 
-  add = () => {console.log('i will do it tomorrow')}
-  remove = () => {console.log('i will do it tomorrow')}
+  name!: string
+  private address =  {}
+
+  add = () => {}
+  remove = () => {}
 }
