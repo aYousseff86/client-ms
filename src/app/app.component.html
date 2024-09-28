@@ -1,9 +1,12 @@
 <div class="home-wrapper">
   <div class="list-wrapper">
+    @for (item of list(); track item) {
+      <p>{{ item }}</p>
+    }
 
   </div>
   <div class="action-wrapper">
-    <div tabindex="0"  aria-label="add number" (click)="add()" (keydown)="add()"><p>Add</p></div>
-    <div tabindex="0" aria-label="remove number " (click)="remove()" (keydown)="remove()"><p>Remove</p></div>
+    <div tabindex="0"  aria-label="add number"  class="btn add-btn" (click)="add()" (keydown)="add()"><p>Add</p></div>
+    <div tabindex="0" aria-label="remove number" class="btn remove-btn" (click)="remove()" (keydown)="remove()"><p>Remove</p></div>
   </div>
 </div>
