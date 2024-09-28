@@ -10,12 +10,19 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'client-ms';
-  protected list = input<number[]>();
+  protected list = input<number[]>([0]);
   private initialValue = signal<number>(0);
 
   name!: string
   private address =  {}
 
-  add = () => {}
-  remove = () => {}
+  add = () => {
+    for (let i = 0; i < 100; i++) {
+      this.initialValue.set(this.initialValue() +1);
+     this.list().push(this.initialValue());
+
+    }
+
+  }
+  remove = () => this.list().pop();
 }

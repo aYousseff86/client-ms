@@ -1,0 +1,41 @@
+:host {
+ .home-wrapper {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(2, 1fr);
+   height: 100vh;
+   .list-wrapper {
+     display: flex;
+     background: darkslateblue;
+     color: white;
+     height: 50vh;
+     overflow-y: auto;
+     flex-wrap: wrap;
+     p {
+       color: white;
+       border: 1px solid white;
+       height: 50px;
+       width: 50px;
+       display: grid;
+       place-items: center;
+     }
+   }
+
+   .action-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     .btn {
+
+     }
+
+     .add-btn {
+
+     }
+     .remove-btn {
+
+     }
+
+   }
+ }
+}
